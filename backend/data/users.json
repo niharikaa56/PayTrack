@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "az4wf7994",
+    "name": "System Admin",
+    "email": "admin@paytrack.com",
+    "password": "$2b$10$MeOEKOPHwZvY8pdn1JZHHeTNJCrb5uuptwUOX3DO8EeAtiD6Qkamu",
+    "role": "admin",
+    "company": "PayTrack Inc",
+    "phone": "+1 (555) 019-2831",
+    "createdAt": "2026-07-15T03:41:34.002Z",
+    "updatedAt": "2026-07-15T03:41:34.002Z"
+  },
+  {
+    "_id": "onu6goi2p",
+    "name": "niharika",
+    "email": "niharika@gmail.com",
+    "password": "$2b$10$7/06HFCiAxFoDnczB9QF.O.lfRb7GgVh4JT1tKd8DaW5DgpCM/bRq",
+    "role": "customer",
+    "company": "",
+    "phone": "",
+    "country": "US",
+    "createdAt": "2026-07-15T03:49:27.611Z",
+    "updatedAt": "2026-07-15T03:49:27.611Z"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "PayTrack",
+  "description": "MERN Stack Subscription Management System to track, renew, and optimize recurring expenses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

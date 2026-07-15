@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "k8tmvyke6",
+    "code": "SAVE20",
+    "discountType": "percentage",
+    "discountValue": 20,
+    "active": true,
+    "maxRedemptions": 100,
+    "redemptionsCount": 0,
+    "createdAt": "2026-07-15T03:41:33.837Z",
+    "updatedAt": "2026-07-15T03:41:33.837Z"
+  },
+  {
+    "_id": "xrvgls8af",
+    "code": "HALFPRICE",
+    "discountType": "percentage",
+    "discountValue": 50,
+    "active": true,
+    "maxRedemptions": 50,
+    "redemptionsCount": 0,
+    "createdAt": "2026-07-15T03:41:33.842Z",
+    "updatedAt": "2026-07-15T03:41:33.842Z"
+  },
+  {
+    "_id": "jxuihjltq",
+    "code": "FLAT15",
+    "discountType": "fixed",
+    "discountValue": 15,
+    "active": true,
+    "maxRedemptions": 200,
+    "redemptionsCount": 0,
+    "createdAt": "2026-07-15T03:41:33.843Z",
+    "updatedAt": "2026-07-15T03:41:33.843Z"
+  }
+]

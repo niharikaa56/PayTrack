@@ -1,0 +1,330 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0d6efd;
+  --color-primary-dark: #0a58ca;
+  --color-text-main: #1e293b;
+  --color-text-muted: #64748b;
+  --color-bg-soft: #f8fafc;
+}
+
+:root {
+  --primary: #0d6efd;
+  --primary-dark: #0a58ca;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --bg-soft: #f8fafc;
+}
+
+/* Global Reset & Flat Clean Body Styling */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  background-color: #f8fafc !important;
+  background-image: none !important; /* No distracting radial gradients */
+  color: #1e293b !important;
+  min-height: 100vh;
+}
+
+/* Typography Overrides - Crisp & Bold */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: #0f172a !important;
+}
+
+p, span, div, td, th, li, a, button, input, label, select, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Reset Frosted Glass Core Classes to SOLID, HIGH-CONTRAST styling */
+.glass-panel {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.glass-card {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Overriding Bootstrap Elements with solid background colors */
+.navbar {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+.card {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #cbd5e1 !important; /* Simple clean solid border */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  background: #ffffff !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Solid color status cards override */
+.card.bg-primary {
+  background: #0d6efd !important;
+  color: #ffffff !important;
+  border-color: #0d6efd !important;
+}
+.card.bg-primary h1, .card.bg-primary h2, .card.bg-primary h3, .card.bg-primary h4, .card.bg-primary h5, .card.bg-primary h6, .card.bg-primary p, .card.bg-primary span {
+  color: #ffffff !important;
+}
+
+.card.bg-success {
+  background: #198754 !important;
+  color: #ffffff !important;
+  border-color: #198754 !important;
+}
+.card.bg-success h1, .card.bg-success h2, .card.bg-success h3, .card.bg-success h4, .card.bg-success h5, .card.bg-success h6, .card.bg-success p, .card.bg-success span {
+  color: #ffffff !important;
+}
+
+.card.bg-danger {
+  background: #dc3545 !important;
+  color: #ffffff !important;
+  border-color: #dc3545 !important;
+}
+.card.bg-danger h1, .card.bg-danger h2, .card.bg-danger h3, .card.bg-danger h4, .card.bg-danger h5, .card.bg-danger h6, .card.bg-danger p, .card.bg-danger span {
+  color: #ffffff !important;
+}
+
+.card.bg-warning {
+  background: #ffc107 !important;
+  color: #1e293b !important;
+  border-color: #ffc107 !important;
+}
+.card.bg-warning h1, .card.bg-warning h2, .card.bg-warning h3, .card.bg-warning h4, .card.bg-warning h5, .card.bg-warning h6, .card.bg-warning p, .card.bg-warning span {
+  color: #1e293b !important;
+}
+
+/* Modals and Dropdowns */
+.modal-content, .dropdown-menu {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 8px !important;
+}
+
+.dropdown-item {
+  border-radius: 4px;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f5f9 !important;
+  color: #0d6efd !important;
+}
+
+/* Accordions - solid & flat */
+.accordion {
+  background: transparent !important;
+}
+
+.accordion-item {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: #ffffff !important;
+  color: #1e293b !important;
+  font-weight: 600 !important;
+  border: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #f1f5f9 !important;
+  color: #0d6efd !important;
+  box-shadow: none !important;
+}
+
+.accordion-body {
+  background: #ffffff !important;
+}
+
+/* Solid Forms inputs */
+.form-control, .form-select, .form-control-plaintext {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+  border-radius: 6px !important;
+  transition: border-color 0.15s ease !important;
+}
+
+.form-control:focus, .form-select:focus {
+  background: #ffffff !important;
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15) !important;
+  color: #1e293b !important;
+}
+
+/* Flat lists and tables */
+.table {
+  --bs-table-bg: transparent !important;
+  --bs-table-hover-bg: #f8fafc !important;
+  background-color: transparent !important;
+  color: #1e293b !important;
+  border-color: #e2e8f0 !important;
+}
+
+.table th {
+  border-bottom: 2px solid #e2e8f0 !important;
+  color: #475569 !important;
+  font-weight: 600 !important;
+}
+
+.table td {
+  border-bottom: 1px solid #f1f5f9 !important;
+  color: #334155 !important;
+}
+
+.list-group-item {
+  background-color: #ffffff !important;
+  backdrop-filter: none !important;
+  border-color: #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+/* Flat Layout Overrides */
+.bg-light {
+  background-color: #f8fafc !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+  backdrop-filter: none !important;
+}
+
+/* Solid buttons */
+.btn {
+  font-weight: 600 !important;
+  transition: all 0.1s ease !important;
+  border-radius: 6px !important;
+}
+
+.btn-primary {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #0a58ca !important;
+  border-color: #0a58ca !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-primary {
+  background-color: #ffffff !important;
+  border-color: #0d6efd !important;
+  color: #0d6efd !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+  color: #ffffff !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Badges */
+.badge {
+  padding: 5px 10px !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+}
+
+.bg-primary-subtle {
+  background-color: #eff6ff !important;
+  color: #0d6efd !important;
+}
+
+.bg-success-subtle {
+  background-color: #f0fdf4 !important;
+  color: #166534 !important;
+}
+
+.bg-danger-subtle {
+  background-color: #fef2f2 !important;
+  color: #991b1b !important;
+}
+
+.bg-warning-subtle {
+  background-color: #fffbeb !important;
+  color: #92400e !important;
+}
+
+.bg-info-subtle {
+  background-color: #f0f9ff !important;
+  color: #0369a1 !important;
+}
+
+/* Footer solid bg */
+footer {
+  border-top: 1px solid #cbd5e1 !important;
+  background-color: #ffffff !important;
+  backdrop-filter: none !important;
+}
+
+/* Alerts and toasts solid */
+.alert {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+}
+
+.toast {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
